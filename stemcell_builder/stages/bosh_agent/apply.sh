@@ -25,6 +25,9 @@ else
     "
 fi
 
+# Make sure required directories exist (required for CentOS)
+mkdir -p $chroot/etc/sv
+mkdir -p $chroot/etc/service
 cp -a $dir/assets/runit/agent $chroot/etc/sv/agent
 
 if [ ${mcf_enabled:-no} == "yes" ]; then

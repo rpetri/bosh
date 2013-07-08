@@ -10,7 +10,7 @@ source $base_dir/lib/prelude_apply.bash
 pushd $work/stemcell
 
 # compute checksum of the image file
-stemcell_checksum=`shasum -a 1 image | cut -f1 -d' '`
+stemcell_checksum=`sha1sum image | cut -f1 -d' '`
 
 # NOTE: architecture and root_device_name aren't dynamically detected
 # as we don't have a way to persist values across stages, and until we

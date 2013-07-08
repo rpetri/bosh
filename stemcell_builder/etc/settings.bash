@@ -2,6 +2,11 @@
 # UBUNTU_ISO=/tmp/lucid-server-amd64.iso
 # UBUNTU_MIRROR=http://mirrors.us.kernel.org/ubuntu/
 
+## Parameters for centos based builds
+## "base_os" is used to prevent certain ubuntu steps during the chroot process (see lib/helpers.sh)
+# CENTOS_ISO=/tmp/CentOS-6.2-x86_64-minimal.iso
+# base_os=centos
+
 # parameters for `base_debootstrap_release`
 # base_debootstrap_suite=precise
 
