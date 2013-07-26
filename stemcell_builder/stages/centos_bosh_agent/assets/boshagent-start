@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Copyright (c) 2009-2012 VMware, Inc.
+
+set -e
+
+export PATH=/var/vcap/bosh/bin:$PATH
+
+/var/vcap/bosh/bin/bosh_agent -c -P centos -I $(cat /etc/infrastructure) 2>&1 > /var/vcap/bosh/log/current
