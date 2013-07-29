@@ -9,6 +9,7 @@ stage bosh_monit
 stage bosh_ruby
 stage bosh_agent
 stage centos_bosh_agent
+stage centos_runit
 stage bosh_sysstat
 stage centos_bosh_sysctl
 stage centos_bosh_ntpdate

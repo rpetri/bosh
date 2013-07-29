@@ -12,7 +12,7 @@ rpms="gcc-c++ kernel-devel openssl-devel lsof strace bind bind-utils tcpdump \
 iputils curl libcurl libcurl-devel wget bison readline-devel libxml2 libxml2-devel \
 libxslt libxslt-devel zip unzip nfs-utils flex psmisc iptables sysstat rsync \
 openssh-server traceroute ncurses-devel quota libaio gdb tripwire \
-libyaml-devel cmake sudo tar make vi vim"
+libyaml-devel cmake sudo tar make vi vim glibc-static syslinux-devel"
 
 # Setup repos.
 mkdir -p ${chroot}/etc
